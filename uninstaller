@@ -1,0 +1,39 @@
+#!/bin/bash
+input="$1"
+cd $( dirname "$0" )
+function help_msg() {
+echo AU216 Virtual Private Network Collection - v1.0
+echo
+echo "Usage: ./uninstaller [option]"
+echo
+echo "Options:"
+echo "-u, --uninstall       Uninstall AU216-VPN."
+echo "-v, --version         Display version."
+echo "-h, --help            Display this message and exit."
+echo
+}
+case $input in
+	"-u"|"--uninstall")
+	echo Uninstalling AU216-VPN...
+	rm /usr/local/bin/au216vpn /usr/bin/au216vpn
+	rm -r /opt/au216vpn
+	sleep 3
+	echo
+	echo Done.
+	echo "P.S. You can reuse this uninstaller!"
+	echo
+	;;
+	"-v"|"--version")
+	echo AU216 Virtual Private Network Collection - v1.0
+	echo "Copyright (c) 2018 by Anonymous User 216"
+	echo
+	;;
+	""|"-h"|"--help")
+	help_msg
+	;;
+	*)
+	echo
+	echo -e "\e[1;31mYour choice was not recognized.\e[0m"
+	echo
+	help_msg
+esac
