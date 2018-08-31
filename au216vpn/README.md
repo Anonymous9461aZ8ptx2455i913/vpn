@@ -1,5 +1,7 @@
-AU216 Virtual Private Network Collection - v1.0      
+AU216 Virtual Private Network Collection - v1.0        
 Copyright (c) 2018 by Anonymous User 216
+##### What is AU216VPN?
+AU216VPN is a VPN client made by Anonymous User 216 that organizes VPN servers into one understandable and easy-to-use VPN client. These VPN servers come from reputable sources such as ProtonVPN or VPNBook.
 
 ### HOW TO INSTALL:
 1. Download the package off of GitHub:
@@ -22,7 +24,8 @@ cd ~/au216vpn-v1.0-installer
 
 ### HOW TO RUN THE VPN CLIENT:
 1. Run the following command:
-```au216vpn -c
+```
+au216vpn -c
 ```
 
 
