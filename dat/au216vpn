@@ -35,7 +35,7 @@ case $input in
 	;;
 	"-v"|"--version")
 	echo AU216 Virtual Private Network Collection - v1.0
-	echo "Copyright (c) 2018 by Anonymous User 216"
+	echo "Copyright (c) $( date +%Y ) by Anonymous User 216"
 	echo
 	;;
 	""|"-h"|"--help")
