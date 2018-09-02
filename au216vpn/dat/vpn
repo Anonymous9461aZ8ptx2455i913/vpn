@@ -17,7 +17,7 @@ function protonvpn_login() {
 	echo Password: protonvpn-anonu216
 	echo
 }
-vpnbook_password=5re6kw6
+vpnbook_password=[MUST BE ENTERED VIA 99.4]
 function vpnbook_login() {
 	echo
 	echo Username: vpnbook
@@ -90,17 +90,17 @@ echo -e "	(2.1) Server #1 -$s21-"
 echo -e "	(2.2) Server #2 -$s22-"
 echo -e "	(2.3) Server #3 -$s23-"
 echo -e "	(2.4) Server #4 -$s24-"
-echo -e "${wbold}(3) [Region], Netherlands${wcol}"
+echo -e "${wbold}(3) Amsterdam, Netherlands${wcol}"
 echo -e "	(3.1) Server #1 -$s31-"
 echo -e "	(3.2) Server #2 -$s32-"
-echo -e "${wbold}(4) [Region], Romania${wcol}"
+echo -e "${wbold}(4) Bucharest, Romania${wcol}"
 echo -e "	(4.1) Server #1 -$s41-"
 echo -e "	(4.2) Server #2 -$s42-"
-echo -e "${wbold}(5) [Region], Canada${wcol}"
+echo -e "${wbold}(5) Montreal, Canada${wcol}"
 echo -e "	(5.1) Server #1 -$s51-"
-echo -e "${wbold}(6) [Region], Germany${wcol}"
+echo -e "${wbold}(6) Frankfurt, Germany${wcol}"
 echo -e "	(6.1) Server #1 -$s61-"
-echo -e "${wbold}(7) [Region], France${wcol}"
+echo -e "${wbold}(7) Roubaix, France${wcol}"
 echo -e "	(7.1) Server #1 -$s71-"
 echo
 echo -e "${wbold}(99) Additional Options${wcol}"

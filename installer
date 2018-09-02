@@ -25,7 +25,7 @@ case $input in
 	echo
 	echo Done.
 	echo
-	echo "You can run 'au216vpn --client' to start the VPN client."
+	echo "You can run 'au216vpn --client' to start the VPN client. Don't forget to enter the VPNBook password (see 99.4)! If any servers seem unavailable or not working, they may be under maintenance."
 	echo "P.S. You can reuse this installer!"
 	echo
 	;;
