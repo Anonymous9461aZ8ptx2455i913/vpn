@@ -42,6 +42,8 @@ git clone "https://www.github.com/AnonymousUser216/au216vpn-v1.0-installer"
 ```
 cd ~/au216vpn-v1.0-installer
 ./uninstaller --uninstall
+```
 ( See additional options with: )
+```
 ./uninstaller --help
 ```
