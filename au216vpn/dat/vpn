@@ -17,7 +17,7 @@ function protonvpn_login() {
 	echo Password: protonvpn-anonu216
 	echo
 }
-vpnbook_password=[MUST BE ENTERED VIA 99.4]
+vpnbook_password="[MUST BE ENTERED VIA 99.4]"
 function vpnbook_login() {
 	echo
 	echo Username: vpnbook
