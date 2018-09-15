@@ -15,12 +15,11 @@ echo
 case $input in
 	"-u"|"--uninstall")
 	echo Uninstalling AU216-VPN...
-	rm /usr/local/bin/au216vpn /usr/bin/au216vpn
-	rm -r /opt/au216vpn
+	rm /usr/local/bin/au216vpn /usr/bin/au216vpn &> /dev/null || echo "au216vpn: shortcuts don't exist"
+	rm -r /opt/au216vpn &> /dev/null || echo "au216vpn: package not installed"
 	sleep 3
 	echo
 	echo Done.
-	echo "P.S. You can reuse this uninstaller!"
 	echo
 	;;
 	"-v"|"--version")
