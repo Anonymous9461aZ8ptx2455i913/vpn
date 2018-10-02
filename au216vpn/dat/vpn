@@ -51,7 +51,7 @@ echo "##  / ____ \ |__| |/ /_ | | (_) |  ____) |     \  /  | |    | |\  | ##"
 echo "## /_/    \_\____/|____||_|\___/  |_____/       \/   |_|    |_| \_| ##"
 echo "##                                                                  ##"
 echo "######################################################################"
-echo "### Anonymous User 216's Virtual Private Network Collection - v1.1 ###"
+echo "### Anonymous User 216's Virtual Private Network Collection - v1.1-pre ###"
 echo "######################################################################"
 echo 
 echo -n -e "${wcol}Press ENTER to continue..." && read null_input
@@ -250,33 +250,33 @@ case $serv_pick in
 	;;
 	"1.1"|"1")
 	echo $(($(cat "uses/11")+1)) > uses/11
-	protonvpn_login
-	openvpn servers/protonvpn/us1.ovpn
+	vpnbook_login
+	openvpn servers/us1.ovpn
 	;;
 	"1.2")
 	echo $(($(cat "uses/12")+1)) > uses/12
-	protonvpn_login
-	openvpn servers/protonvpn/us2.ovpn
+	vpnbook_login
+	openvpn servers/us2.ovpn
 	;;
 	"2.1"|"2")
 	echo $(($(cat "uses/21")+1)) > uses/21
 	vpnbook_login
-	openvpn servers/vpnbook/canada222.ovpn
+	openvpn servers/canada222.ovpn
 	;;
 	"3.1"|"3")
 	echo $(($(cat "uses/31")+1)) > uses/31
 	vpnbook_login
-	openvpn servers/vpnbook/germany1.ovpn
+	openvpn servers/germany1.ovpn
 	;;
 	"4.1"|"4")
 	echo $(($(cat "uses/41")+1)) > uses/41
 	vpnbook_login
-	openvpn servers/vpnbook/france1.ovpn
+	openvpn servers/france1.ovpn
 	;;
 	"5.1"|"5")
 	echo $(($(cat "uses/51")+1)) > uses/51
 	vpnbook_login
-	openvpn servers/vpnbook/poland226.ovpn
+	openvpn servers/poland226.ovpn
 	;;
 	"216"|"AU216"|"aU216"|"Au216"|"au216")
 	echo
