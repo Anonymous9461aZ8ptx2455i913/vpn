@@ -87,7 +87,7 @@ echo -e "${wbold}(3) Frankfurt, Germany${wcol}"
 echo -e "	(3.1) Server #1 -$s31-"
 echo -e "${wbold}(4) Roubaix, France${wcol}"
 echo -e "	(4.1) Server #1 -$s41-"
-echo -e "${wbold}(5) [Region], Poland${wcol}"
+echo -e "${wbold}(5) Warsaw, Poland${wcol}"
 echo -e "	(5.1) Server #1 -$s51-"
 echo
 echo -e "${wbold}(99) Additional Options${wcol}"
