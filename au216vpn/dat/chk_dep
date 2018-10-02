@@ -7,19 +7,8 @@ gbold="\e[1;32m" # Green-bold
 ybold="\e[1;33m" # Yellow-bold
 err_count=0
 cat_vpn="$(cat /opt/au216vpn/dat/vpn)"
-pvpns="/opt/au216vpn/servers/protonvpn/"
-vpnbs="/opt/au216vpn/servers/vpnbook/"
+serv_path="/opt/au216vpn/servers/"
 openvpnStatus=""
-if [ -e /opt/au216vpn ] # Verify root folder existence
-then
-	echo "au216vpn: root folder exists"
-	sleep 1
-else
-	echo "au216vpn: root folder missing"
-	echo -e "${rbold}[!]${wcol} This folder is required for the VPN client to work properly, it is recommended you install it${TOA}"
-	sleep 5.8
-	err_count=$((err_count+1))
-fi
 if [ "$(cat /opt/au216vpn/dat/ver/ver)" = "ver" ] # Verify ver-file
 then
 	echo "au216vpn: ver: verification file exists"
@@ -39,21 +28,14 @@ else
 	sleep 5.8
 	err_count=$((err_count+1))
 fi
-if [ -e $pvpns"japan1.ovpn" ] && [ -e $pvpns"japan2.ovpn" ] && [ -e $pvpns"netherlands1.ovpn" ] && [ -e $pvpns"netherlands2.ovpn" ] && [ -e $pvpns"us1.ovpn" ] && [ -e $pvpns"us2.ovpn" ] # Verify ProtonVPN server existence
+if [ -e $serv_path"canada1.ovpn" ] && [ -e $serv_path"france1.ovpn" ] && [ -e $serv_path"germany1.ovpn" ] &&
+	[ -e $serv_path"us1.ovpn" ] && [ -e $serv_path"us2.ovpn" ] && [ -e $serv_path"germany4.ovpn" ] && [ -e $serv_path"poland226.ovpn" ] &&
+	[ -e $serv_path"canada222.ovpn" ]
 then
-	echo "au216vpn: servers: protonvpn servers intact"
+	echo "au216vpn: servers intact"
 	sleep 1
 else
-	echo "au216vpn: servers: protonvpn server(s) missing"
-	echo -e "${ybold}[~]${wcol} One or more ProtonVPN servers are missing, not required but highly recommended${TOA}"
-	sleep 5.8
-fi
-if [ -e $vpnbs"canada1.ovpn" ] && [ -e $vpnbs"france1.ovpn" ] && [ -e $vpnbs"germany1.ovpn" ] && [ -e $vpnbs"romania1.ovpn" ] && [ -e $vpnbs"romania2.ovpn" ] && [ -e $vpnbs"us3.ovpn" ] && [ -e $vpnbs"us4.ovpn" ]
-then
-	echo "au216vpn: servers: vpnbook servers intact"
-	sleep 1
-else
-	echo "au216vpn: servers: vpnbook server(s) missing"
+	echo "au216vpn: server(s) missing"
 	echo -e "${ybold}[~]${wcol} One or more VPNBook servers are missing, not required but highly recommended${TOA}"
 	sleep 5.8
 fi

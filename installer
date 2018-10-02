@@ -2,7 +2,7 @@
 input="$1"
 cd $( dirname "$0" )
 function help_msg() {
-echo AU216 Virtual Private Network Collection - v1.0
+echo AU216 Virtual Private Network Collection - v1.1
 echo
 echo "Usage: ./installer [option]"
 echo
@@ -15,21 +15,19 @@ echo
 case $input in
 	"-i"|"--install")
 	echo Installing AU216-VPN...
-	cp dat/au216vpn /usr/local/bin
+	cp usrbin/au216vpn /usr/local/bin
 	chmod +x /usr/local/bin/au216vpn
-	cp dat/au216vpn /usr/bin
+	cp usrbin/au216vpn /usr/bin
 	chmod +x /usr/bin/au216vpn
 	cp -r au216vpn /opt
 	chmod +x /opt/au216vpn/dat/vpn
 	sleep 3
 	echo
-	echo Done.
-	echo
-	echo "You can run 'au216vpn --client' to start the VPN client. Don't forget to enter the VPNBook password (see 99.4)!"
+	echo "Done. You can run 'au216vpn --client' to start the VPN client. Enjoy!"
 	echo
 	;;
 	"-v"|"--version")
-	echo AU216 Virtual Private Network Collection - v1.0
+	echo AU216 Virtual Private Network Collection - v1.1
 	echo "Copyright (c) 2018 by Anonymous User 216"
 	echo
 	;;
