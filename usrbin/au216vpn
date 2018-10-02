@@ -1,0 +1,49 @@
+#!/bin/bash
+input="$1"
+function help_msg() {
+echo AU216 Virtual Private Network Collection - v1.0
+echo
+echo "Usage: au216vpn [option]"
+echo
+echo "Options:"
+echo "-c, --client          Start the VPN client."
+echo "-d, --disconnect      Disconnect an existing connection."
+echo "-u, --uninstall       Uninstall AU216-VPN."
+echo "-v, --version         Display version."
+echo "-h, --help            Display this message and exit."
+echo
+}
+case $input in
+	"-c"|"--client")
+	/opt/au216vpn/dat/vpn
+	;;
+	"-d"|"--disconnect")
+	killall openvpn &> /dev/null
+	sleep 1
+	echo
+	echo Done.
+	echo
+	;;
+	"-u"|"--uninstall")
+	echo Uninstalling AU216-VPN...
+	rm /usr/local/bin/au216vpn /usr/bin/au216vpn
+	rm -r /opt/au216vpn
+	sleep 3
+	echo
+	echo Done.
+	echo
+	;;
+	"-v"|"--version")
+	echo AU216 Virtual Private Network Collection - v1.0
+	echo "Copyright (c) $( date +%Y ) by Anonymous User 216"
+	echo
+	;;
+	""|"-h"|"--help")
+	help_msg
+	;;
+	*)
+	echo
+	echo -e "\e[1;31mYour choice was not recognized.\e[0m"
+	echo
+	help_msg
+esac
