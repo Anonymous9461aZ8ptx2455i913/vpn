@@ -51,7 +51,7 @@ echo "##  / ____ \ |__| |/ /_ | | (_) |  ____) |     \  /  | |    | |\  | ##"
 echo "## /_/    \_\____/|____||_|\___/  |_____/       \/   |_|    |_| \_| ##"
 echo "##                                                                  ##"
 echo "######################################################################"
-echo "### Anonymous User 216's Virtual Private Network Collection - v1.1-pre ###"
+echo "### Anonymous User 216's Virtual Private Network Collection - v1.1-pre2 ###"
 echo "######################################################################"
 echo 
 echo -n -e "${wcol}Press ENTER to continue..." && read null_input
