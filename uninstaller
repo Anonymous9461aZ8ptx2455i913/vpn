@@ -2,7 +2,7 @@
 input="$1"
 cd $( dirname "$0" )
 function help_msg() {
-echo AU216 Virtual Private Network Collection - v1.1-pre2
+echo AU216 Virtual Private Network Collection - v1.1-alpha.2
 echo
 echo "Usage: ./uninstaller [option]"
 echo
@@ -23,7 +23,7 @@ case $input in
 	echo
 	;;
 	"-v"|"--version")
-	echo AU216 Virtual Private Network Collection - v1.1-pre2
+	echo AU216 Virtual Private Network Collection - v1.1-alpha.2
 	echo "Copyright (c) 2018 by Anonymous User 216"
 	echo
 	;;
